@@ -12,7 +12,7 @@ const provider = new AnchorProvider(connection, wallet, {
 const program = new Program(idl, 'YourProgramID', provider);
 
 async function depositFunds(amount: number) {
-    const savingsAccount = new PublicKey('YourSavingsAccountPublicKey');
+    const savingsAccount = new PublicKey('11111111111111111111111111111111');
     await program.methods.deposit(new anchor.BN(amount)).accounts({
         savingsAccount,
         user: wallet.publicKey,
